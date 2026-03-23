@@ -12,7 +12,6 @@
 
 <p align="center">
   <img src="3dpcbfront.png" width="45%" />
-  <img src="3dpcbback.png" width="45%" />
 </p>
 
 ---
