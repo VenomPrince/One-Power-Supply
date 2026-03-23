@@ -20,7 +20,6 @@
 ## 3D + Enclosure
 
 <p align="center">
-  <img src="3dbox.png" width="45%" />
   <img src="3Dview with Box.png" width="45%" />
 </p>
 
