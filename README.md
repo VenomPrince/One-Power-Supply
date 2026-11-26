@@ -16,23 +16,23 @@
 
 ---
 
-## Result — Built & Tested
+## Result: Built & Tested
 
 The board was fabricated, hand-soldered and tested.
 
 <p align="center">
   <img src="Result/web/soldered-board.jpg" width="45%" />
-  <img src="Result/web/powered-board.jpg" width="45%" />
-</p>
-
-<p align="center">
-  <em>Soldered board (USB-C IN, screw-terminal OUTPUT, power LED) — powered up, power LED lit.</em>
-</p>
-
-Output voltage measured at the screw terminal with a multimeter — **5.71 V DC**:
-
-<p align="center">
   <img src="Result/web/measuring-probes.jpg" width="45%" />
+</p>
+
+<p align="center">
+  <em>Soldered board (USB-C IN, screw-terminal OUTPUT, power LED). Powered up with the power LED lit.</em>
+</p>
+
+Output voltage measured at the screw terminal with a multimeter. Result: **5.71 V DC**
+
+<p align="center">
+  <img src="Result/web/Measuring1.jpg" width="45%" />
   <img src="Result/web/measurement-5v10.jpg" width="45%" />
 </p>
 
