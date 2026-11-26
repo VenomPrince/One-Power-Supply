@@ -29,7 +29,7 @@ The board was fabricated, hand-soldered and tested.
   <em>Soldered board (USB-C IN, screw-terminal OUTPUT, power LED) — powered up, power LED lit.</em>
 </p>
 
-Output voltage measured at the screw terminal with a multimeter — **5.10 V DC**:
+Output voltage measured at the screw terminal with a multimeter — **5.71 V DC**:
 
 <p align="center">
   <img src="Result/web/measuring-probes.jpg" width="45%" />
