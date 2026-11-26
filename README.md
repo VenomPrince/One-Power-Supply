@@ -41,7 +41,7 @@ written here plainly because it decides what the board can and cannot be used fo
 | Mounting | 4 holes to ground |
 | Regulator | none |
 | Output voltage | follows the input source |
-| Measured output | 5.71 V at the screw terminal |
+| Measured output | 5.18 V at the screw terminal |
 
 ---
 
@@ -55,9 +55,8 @@ along with a third 100 nF capacitor.
 
 **Layout.** 2 layer, top copper and bottom copper, with plated through holes. All parts except
 the screw terminal are surface mount on the top side. The USB C receptacle sits on one edge and
-the screw terminal on the opposite edge, so the board reads left to right. Four mounting holes
-are placed at the corners and tied to ground. The silkscreen carries the board name, the pin
-labels IN and OUT, and a small drawing.
+the screw terminal on the opposite edge. Four mounting holes are placed at the corners and tied
+to ground. The silkscreen carries the board name, the pin labels IN and OUT, and a small drawing.
 
 **Enclosure.** The 3D shell design is included as STL files, so the board can be closed in a
 printed box with an opening for the USB C plug and the LED.
@@ -75,17 +74,17 @@ by hand.
 
 Test method: board powered from a USB C source, multimeter probe on the screw terminal.
 
-Result: **5.71 V** at the output terminal.
+Result: **5.18 V** at the output terminal.
 
-![Measurement](Result/web/Measuring1.jpg)
+![Measurement](Result/web/measuring2.jpg)
 
-That number is not a fault. With no regulator on the board, the output is whatever the source
-supplies, and a source with a light load often sits above 5.0 V. It is a fair reading of the
-board as designed, and it is the reason the next revision needs a regulator.
+5.18 V sits inside the 4.75 to 5.25 V USB tolerance, so the board does what it is meant to do
+with the source I used. Because there is no regulator, the exact value depends on the charger
+and on the load, and a heavier load will pull it down.
 
 ---
 
-## cant do
+## Limitations
 
 - **No regulation.** The output moves with the charger and with the load. A load that pulls
   real current will see the voltage fall.
@@ -99,7 +98,7 @@ board as designed, and it is the reason the next revision needs a regulator.
 
 ---
 
-## second revision
+## What I would change in a second revision
 
 1. Add a 5 V LDO or a small buck converter so the output is regulated.
 2. Add 10 uF of ceramic bulk capacitance on input and output.
@@ -123,11 +122,11 @@ One-Power-Supply/
 ├── PCB.png                                          PCB layout
 ├── 3dpcbfront.png                                   front 3D view
 ├── 3dpcbback2.png                                   back 3D view
-└── Result/                                          build photographs
-    ├── board soldered.jpg
-    ├── board pluggedin.jpg
-    ├── Measuring multimeter.jpg
-    └── web/                                         smaller copies for the README
+└── Result/
+    ├── web/
+    │   ├── soldered-board.jpg                       the finished board
+    │   └── measuring2.jpg                           output voltage measurement
+    └── board soldered.jpg, board pluggedin.jpg …    full size originals
 ```
 
 ## Tools used
